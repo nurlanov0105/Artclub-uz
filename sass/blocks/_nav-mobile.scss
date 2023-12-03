@@ -1,0 +1,42 @@
+.nav-mobile {
+   position: fixed;
+   top: -1000%;
+   right: 0;
+   opacity: 0;
+   transition: opacity 0.3s ease-in;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   row-gap: 16px;
+   padding: 60px 34px;
+   width: 288px;
+
+   background: $color-white;
+   border-radius: 0px 0px 0px 15px;
+
+   &.active {
+      top: 0;
+      right: 0;
+      opacity: 1;
+      z-index: 4;
+      transition: opacity 0.3s ease-out;
+   }
+
+   &.active > .socials {
+      display: flex;
+   }
+}
+.nav-mobile-item {
+   font-weight: 500;
+   font-size: 18px;
+   color: $color-black;
+
+   a {
+      text-decoration-color: transparent;
+      @include transition;
+   }
+   a:hover {
+      text-decoration: underline;
+   }
+}

@@ -1,0 +1,26 @@
+// Base
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/titles";
+@import "./blocks/btns";
+@import "./blocks/bookmark-title";
+@import "./blocks/burger";
+@import "./blocks/nav-mobile";
+@import "./blocks/overlay";
+
+// Sections
+@import "./sections/header";
+@import "./sections/subscribe";
+@import "./sections/advantages";
+@import "./sections/for-who";
+@import "./sections/gallery";
+@import "./sections/about";
+@import "./sections/benfits";
+@import "./sections/team";
+@import "./sections/reviews";
+@import "./sections/costs";
+@import "./sections/footer";

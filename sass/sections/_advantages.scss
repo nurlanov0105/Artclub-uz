@@ -1,0 +1,174 @@
+.advantages {
+   margin-top: -58px;
+   margin-bottom: 155px;
+
+   & > .container .secondary-title {
+      margin-bottom: 80px;
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         margin-bottom: 51px;
+      }
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      margin-bottom: 120px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      margin-bottom: 100px;
+   }
+}
+
+.br-1 {
+   display: none;
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: block;
+   }
+}
+.br-2 {
+   /* Mobile*/
+   @media (max-width: 599px) {
+      display: none;
+   }
+}
+
+.advantages__main-title {
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: -76px;
+      left: -70px;
+      width: 302px;
+      height: 201px;
+      background-image: url("../img/icons/whall-paint.png");
+      background-repeat: no-repeat;
+
+      /* Descktop */
+      @media (max-width: 1539px) {
+         left: 0;
+      }
+
+      /* Mobile*/
+      @media (max-width: 599px) {
+         background-image: url("../img/icons/wall-paint-m.png");
+         top: -50px;
+      }
+   }
+}
+
+.advantages__row {
+   display: flex;
+   justify-content: space-between;
+
+   /* Descktop */
+   @media (max-width: 1539px) {
+      justify-content: space-around;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: center;
+      row-gap: 80px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      row-gap: 45px;
+   }
+}
+.advantages__list {
+   width: 671px;
+   background: #ffffff;
+   box-shadow: 0px 4px 35px 4px rgba(87, 99, 174, 0.61);
+   border-radius: 30px;
+
+   &-our {
+      padding: 0 38px 69px;
+   }
+   &-other {
+      padding: 0 38px 54px;
+      box-shadow: 0px 4px 25px 4px rgba(71, 72, 80, 0.09);
+
+      .bookmark-title {
+         background-color: #a0a0a0;
+      }
+
+      /* Tablet Small*/
+      @media (max-width: 899px) {
+         box-shadow: 0px 4px 35px 4px rgba(87, 99, 174, 0.61);
+      }
+   }
+
+   /* Descktop */
+   @media (max-width: 1539px) {
+      width: 550px;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      width: 400px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 100%;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      padding: 0 20px 26px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 319px) {
+      box-shadow: 0px 4px 4px 4px rgba(87, 99, 174, 0.61);
+   }
+}
+.third-title {
+}
+
+.advantages__list-item {
+   position: relative;
+   padding-left: 35px;
+
+   color: #353434;
+   font-weight: 400;
+   font-size: 18px;
+
+   & + & {
+      margin-top: 25px;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   &.cross:before {
+      background-image: url("../img/icons/cross.svg");
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 16px;
+
+      & + & {
+         margin-top: 10px;
+      }
+   }
+}

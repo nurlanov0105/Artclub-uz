@@ -1,0 +1,14 @@
+// Font-Family
+@mixin roboto-family {
+   font-family: "Roboto", sans-serif;
+}
+@mixin foglihtenNo06-family {
+   font-family: "FoglihtenNo06", serif;
+}
+@mixin montserrat-family {
+   font-family: "Montserrat", sans-serif;
+}
+
+@mixin transition {
+   transition: all 0.3s ease-out;
+}

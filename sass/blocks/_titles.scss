@@ -1,0 +1,91 @@
+.first-title {
+   @include foglihtenNo06-family;
+   font-weight: 500;
+   font-size: 70px;
+   text-transform: uppercase;
+   color: #201b3e;
+
+   .first-title--accent {
+      font-size: 85px;
+      color: $blue-dark;
+
+      /* Tablet Big */
+      @media (max-width: 1199px) {
+         font-size: 70px;
+      }
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      font-size: 60px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 38px;
+
+      .first-title--accent {
+         font-size: 50px;
+      }
+   }
+
+   /* Mobile Big*/
+   @media (max-width: 599px) {
+      font-size: 30px;
+      .first-title--accent {
+         font-size: 38px;
+      }
+   }
+}
+
+.secondary-title {
+   @include foglihtenNo06-family;
+
+   font-weight: 500;
+   font-size: 60px;
+   text-transform: uppercase;
+   color: $color-black;
+
+   /* Tablet Big */
+   @media (max-width: 1199px) {
+      font-size: 55px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 45px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 30px;
+   }
+
+   /* Mobile Small */
+   @media (max-width: 349px) {
+      font-size: 28px;
+   }
+}
+
+.third-title {
+   font-family: "Roboto";
+   font-weight: 500;
+   font-size: 35px;
+   text-transform: uppercase;
+   color: $color-white;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      font-size: 30px;
+   }
+
+   /* Mobile*/
+   @media (max-width: 599px) {
+      font-size: 24px;
+   }
+
+   /* Mobile small*/
+   @media (max-width: 374px) {
+      font-size: 18px;
+   }
+}
